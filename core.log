@@ -1,0 +1,370 @@
+2017-11-25 23:15:12,907 - __main__ - INFO - core started
+2017-11-25 23:15:12,907 - __main__ - INFO - Server started
+2017-11-25 23:15:26,441 - __main__ - INFO - Accepting connection {
+    "host_system_username": "kaan",
+    "hostname": "kaan-Inspiron-7559",
+    "password": "pass-1",
+    "software_version": "V0.0.16",
+    "username": "device-1"
+}
+2017-11-25 23:15:26,441 - __main__ - WARNING - [Message Router] invalid message type device-1 Connected
+2017-11-25 23:15:31,447 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:15:31.447100",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:15:36,453 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:15:36.452351",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:16:20,716 - __main__ - INFO - core started
+2017-11-25 23:16:20,716 - __main__ - INFO - Server started
+2017-11-25 23:16:21,730 - __main__ - INFO - Accepting connection {
+    "host_system_username": "kaan",
+    "hostname": "kaan-Inspiron-7559",
+    "password": "pass-1",
+    "software_version": "V0.0.16",
+    "username": "device-1"
+}
+2017-11-25 23:16:21,731 - __main__ - WARNING - [Message Router] invalid message type device-1 Connected
+2017-11-25 23:16:26,741 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:16:26.741094",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:16:31,745 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:16:31.744752",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:16:36,749 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:16:36.748693",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:16:41,752 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:16:41.751787",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:16:43,271 - __main__ - WARNING - Kicking client  device-1 Total Session Time 0:00:21.540358 Reason B-storm
+2017-11-25 23:16:43,272 - __main__ - WARNING - [Message Router] invalid message type core Client Disconnected Client with object of username: device-1 last ping 21 Reason B-storm
+2017-11-25 23:17:22,103 - __main__ - INFO - core started
+2017-11-25 23:17:22,103 - __main__ - INFO - Server started
+2017-11-25 23:17:22,104 - __main__ - ERROR - [socket bind] Socket binding error: [Errno 98] Address already in use
+2017-11-25 23:17:22,104 - __main__ - ERROR - [socket bind] Traceback (most recent call last):
+  File "/home/kaan/Desktop/tunnel_software/tunnel_server/core/server_socket_layer.py", line 97, in socket_bind
+    self.socket.bind((self.host, self.port))
+OSError: [Errno 98] Address already in use
+
+2017-11-25 23:17:27,108 - __main__ - ERROR - [socket bind] Socket binding error: [Errno 98] Address already in use
+2017-11-25 23:17:27,109 - __main__ - ERROR - [socket bind] Traceback (most recent call last):
+  File "/home/kaan/Desktop/tunnel_software/tunnel_server/core/server_socket_layer.py", line 97, in socket_bind
+    self.socket.bind((self.host, self.port))
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/kaan/Desktop/tunnel_software/tunnel_server/core/server_socket_layer.py", line 97, in socket_bind
+    self.socket.bind((self.host, self.port))
+OSError: [Errno 98] Address already in use
+
+2017-11-25 23:17:35,611 - __main__ - INFO - core started
+2017-11-25 23:17:35,611 - __main__ - INFO - Server started
+2017-11-25 23:17:36,951 - __main__ - INFO - Accepting connection {
+    "host_system_username": "kaan",
+    "hostname": "kaan-Inspiron-7559",
+    "password": "pass-1",
+    "software_version": "V0.0.16",
+    "username": "device-1"
+}
+2017-11-25 23:17:36,952 - __main__ - WARNING - [Message Router] invalid message type device-1 Connected
+2017-11-25 23:17:41,956 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:17:41.955691",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:17:46,960 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:17:46.959366",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:18:12,250 - __main__ - INFO - core started
+2017-11-25 23:18:12,250 - __main__ - INFO - Server started
+2017-11-25 23:18:20,103 - __main__ - INFO - Accepting connection {
+    "host_system_username": "kaan",
+    "hostname": "kaan-Inspiron-7559",
+    "password": "pass-1",
+    "software_version": "V0.0.16",
+    "username": "device-1"
+}
+2017-11-25 23:18:20,104 - __main__ - WARNING - [Message Router] invalid message type device-1 Connected
+2017-11-25 23:18:22,021 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:17:51.964603",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:18:25,114 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:18:25.113968",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:18:30,119 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:18:30.119194",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:19:02,689 - __main__ - INFO - core started
+2017-11-25 23:19:02,689 - __main__ - INFO - Server started
+2017-11-25 23:19:07,152 - __main__ - INFO - Accepting connection {
+    "host_system_username": "kaan",
+    "hostname": "kaan-Inspiron-7559",
+    "password": "pass-1",
+    "software_version": "V0.0.16",
+    "username": "device-1"
+}
+2017-11-25 23:19:07,153 - __main__ - WARNING - [Message Router] invalid message type device-1 Connected
+2017-11-25 23:19:12,155 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:19:12.154240",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:20:23,277 - __main__ - INFO - core started
+2017-11-25 23:20:23,277 - __main__ - INFO - Server started
+2017-11-25 23:20:26,199 - __main__ - INFO - Accepting connection {
+    "host_system_username": "kaan",
+    "hostname": "kaan-Inspiron-7559",
+    "password": "pass-1",
+    "software_version": "V0.0.16",
+    "username": "device-1"
+}
+2017-11-25 23:20:26,200 - __main__ - WARNING - [Message Router] invalid message type device-1 Connected
+2017-11-25 23:20:31,205 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:20:31.205065",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:20:35,320 - __main__ - WARNING - Kicking client  device-1 Total Session Time 0:00:09.120375 Reason B-storm
+2017-11-25 23:20:35,321 - __main__ - WARNING - [Message Router] invalid message type core Client Disconnected Client with object of username: device-1 last ping 9 Reason B-storm
+2017-11-25 23:31:13,219 - __main__ - INFO - core started
+2017-11-25 23:31:13,219 - __main__ - INFO - Server started
+2017-11-25 23:31:16,672 - __main__ - INFO - Accepting connection {
+    "host_system_username": "kaan",
+    "hostname": "kaan-Inspiron-7559",
+    "password": "pass-1",
+    "software_version": "V0.0.16",
+    "username": "device-1"
+}
+2017-11-25 23:31:16,673 - __main__ - WARNING - [Message Router] invalid message type device-1 Connected
+2017-11-25 23:31:21,681 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:31:21.680486",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:31:21,693 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:31:21.692779",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:31:26,684 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:31:26.682992",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:31:26,685 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:31:26.684933",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:31:31,688 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:31:31.687321",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:31:31,689 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:31:31.689078",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:31:36,690 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:31:36.689728",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:31:36,692 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:31:36.691614",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:31:41,694 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:31:41.693864",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:31:41,696 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:31:41.695686",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:31:46,699 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:31:46.699054",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:31:46,701 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:31:46.700813",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:31:51,703 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:31:51.702269",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:31:51,704 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:31:51.704074",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:31:56,706 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:31:56.705481",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:31:56,707 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:31:56.707293",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:32:01,710 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:32:01.709984",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:32:01,712 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:32:01.711768",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:32:06,711 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:32:06.710193",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:32:06,712 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:32:06.712072",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:32:11,716 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:32:11.715431",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:32:11,718 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:32:11.717214",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:32:16,721 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:32:16.720671",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:32:16,723 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:32:16.722408",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:32:21,726 - __main__ - INFO - Received message {
+    "date": "2017-11-25 23:32:21.725966",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "device-1",
+    "to": "server",
+    "type": "utility"
+} from device-1
+2017-11-25 23:32:21,728 - __main__ - INFO - Sent message to client {
+    "date": "2017-11-25 23:32:21.727825",
+    "payload": "{\"utility_group\": \"ping\"}",
+    "sender": "core",
+    "to": "device-1",
+    "type": "utility"
+}
+2017-11-25 23:32:22,611 - __main__ - WARNING - Kicking client  device-1 Total Session Time 0:01:05.938589 Reason B-storm
+2017-11-25 23:32:22,611 - __main__ - WARNING - [Message Router] invalid message type core Client Disconnected Client with object of username: device-1 last ping 1 Reason B-storm
