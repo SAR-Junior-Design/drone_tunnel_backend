@@ -22,6 +22,19 @@ class User(Base):
         self.description = description
         self.user_type = user_type
 
+    @staticmethod
+    def authenticate_user(username, password):
+        """
+        This method authenticates the user
+        :param username: the username of the user
+        :param password: the password of the user
+        :return: if user fails to authenticate returns false, if it succeeds returns true
+        """
+        db_user = User.query.filter_by(username=username, password=password).first()
+        if db_user is not None and (db_user.password == password and db_user.username == username):
+            return True
+        else:
+            return False
 
 class Connected_user(Base):
     """
@@ -37,8 +50,19 @@ class Connected_user(Base):
         self.username = username
 
     def update_last_ping(self, last_ping):
-        pass
+        """
+        Updates the last ping of the user
+        :param last_ping:
+        :return:
+        """
+        self.last_ping = last_ping
 
+    def clear_table(self):
+        """
+        Clears the whole table, its for booting up and stuff.
+        :return:
+        """
+        pass
 
 class Event(Base):
     """

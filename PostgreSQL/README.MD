@@ -24,7 +24,6 @@ sudo apt-get install postgresql postgresql-contrib
 
 Create Database
 CREATE DATABASE campusbuzz;
-
 GRANT ALL PRIVILEGES ON DATABASE campusbuzz TO patrcik;
 
 Connect to a database

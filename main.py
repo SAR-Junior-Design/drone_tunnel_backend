@@ -59,7 +59,11 @@ if __name__ == "__main__":
     utility_handler = UtilityHandler()
     message_handler.register_handler(utility_handler, "utility")
 
-    server_controller = SocketServerController(server, message_handler, db_session,logger=new_logger)
+    from addons.drone_add_on.handlers.drone_handler import DroneHandler
+    drone_handler_object = DroneHandler()
+    message_handler.register_handler(drone_handler_object, "drone")
+
+    server_controller = SocketServerController(server, message_handler, db_session, logger=new_logger)
 
     # core logic is the ui which allows us to create and send commands to the clients and also see info about them!
     ui_logic = ServerLogic()

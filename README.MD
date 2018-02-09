@@ -14,7 +14,8 @@ the server needs to have the public key of the clients
 and the operator needs to know the username and the password for the clients (username is sent but the password will be predefined)  
 
 **Requirements**
-sudo apt-get install sqlite3
+sudo apt-get install python3-pip
+sudo apt-get install postgresql postgresql-contrib
 
 
 **Version History**  

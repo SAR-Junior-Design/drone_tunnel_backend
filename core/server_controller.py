@@ -310,17 +310,18 @@ class SocketServerController(object):
                 # print("DEBUG " + str(new_block))
                 self.logger.debug("[message_routing] Routing message " + str(new_block))
 
-                if new_block.type == MessageType.event:
+                if new_block.type == "event":
                     self.UI_queue.put(new_block)
-                elif new_block.type == MessageType.utility:
-                    # self.handle_utility(new_block)
-                    self.message_handler.handle_message(new_block)
-                elif new_block.type == MessageType.communication:
+                # elif new_block.type == MessageType.utility:
+                #     # self.handle_utility(new_block)
+                #     self.message_handler.handle_message(new_block)
+                elif new_block.type == "communication":
                     self.handle_comms(new_block)
                 else:
-                    ColorPrint.print_message("Warning", str(new_block.sender), str(new_block.payload))
-                    self.logger.warning(
-                        "[Message Router] invalid message type " + str(new_block.sender) + " " + str(new_block.payload))
+                    self.message_handler.handle_message(new_block)
+                    # ColorPrint.print_message("Warning", str(new_block.sender), str(new_block.payload))
+                    # self.logger.warning(
+                    #     "[Message Router] invalid message type " + str(new_block.sender) + " " + str(new_block.payload))
 
         print("Message routing shutting down")
 
