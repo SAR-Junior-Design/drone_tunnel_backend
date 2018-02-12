@@ -26,7 +26,7 @@ class DroneHandler(object):
     def register_drone(self, drone):
         self.drones[drone.id] = drone
 
-    def initialize(self,server):
+    def initialize(self, server):
         self.server = server
         if self.server is not None:
             self.logger = self.server.logger
@@ -37,8 +37,20 @@ class DroneHandler(object):
 
     def register_methods(self):
         self.register_method(self.get_all_connected_drones, "get_all_connected_drones")
+
+
         self.register_method(self.get_drone_info, "get_drone_info")
-        self.register_method(self.get_info_result, "get_info_result")
+        self.register_method(self.get_drone_info_result, "get_drone_info_result")
+
+        self.register_method(self.upload_mission, "upload_mission")
+        self.register_method(self.upload_mission_result, "upload_mission_result")
+
+        self.register_method(self.send_rtl_command, "send_rtl_command")
+        self.register_method(self.send_rtl_command_result, "send_rtl_command_result")
+
+        self.register_method(self.start_mission, "start_mission")
+        self.register_method(self.start_mission_result, "start_mission_result")
+
 
     def register_method(self, method, name_of_the_method):
         """
@@ -74,6 +86,8 @@ class DroneHandler(object):
 
     def provide_info(self, message):
         """
+        This method is called by the remote user, it sends all the information that it has about the current devices
+        connected
                 {   "id": 112223,
                     "payload": "{\"type\": \"provide_info\",
                                 "command": { "name":"fetch_all_drone_info"
@@ -99,14 +113,15 @@ class DroneHandler(object):
 
     def get_drone_info(self, drone_id, message):
         """
-        Returns full information of the polled drone
+        Returns full information of the polled drone, this is called by the remote user
         :param drone_id:
         :param message:
         :return:
         """
         print("get drone info called")
 
-    def get_info_result(self, message):
+
+    def get_drone_info_result(self, message):
         """
         This will be used by the drone to return the result of the async message get_drone_info
         :param message: the reply message which includes the information about the drone
@@ -115,20 +130,44 @@ class DroneHandler(object):
         print(message)
         pass
 
-    def get_all_connected_drones(self):
+    def upload_mission(self, message):
         """
-        Returns a list of all connected drones
+        This method sends a mission file to the drone, called by remote user
+        :return:
+        """
+        pass
+
+    def upload_mission_result(self, message):
+        """
+
+        This method receives the reply of the upload mission command, sent by the drone
+        :param message:
+        :return:
+        """
+
+    def send_rtl_command(self, message):
+        """
+        This method sends a rtl command to the drone, called by remote user
+        :param drone:
+        :return:
+        """
+        pass
+
+    def send_rtl_command_result(self, message):
+        """
+        This method receives the reply of the rtl request. Sent by the drone
+        :param message:
+        :return:
+        """
+        pass
+
+    def get_all_connected_drones(self, message):
+        """
+        Returns a list of all connected drones, this is called by the remote user
         :return:
         """
         print("get all connected drones called")
 
-    def handle_ping(self, message):
-        client = self.server.get_client_from_username(message.sender)
-        client.update_last_ping()
-
-        ping_payload = {"utility_group": "ping"}
-        ping_message = Message("core", message.sender, MessageType.utility, ping_payload)
-        self.server.send_message_to_client(ping_message)
 
     def __str__(self):
         return "DroneHandler Object"

@@ -13,6 +13,8 @@ class Drone_db(Base):
     description = Column(TEXT, nullable=False)
     creation_date = Column(TIMESTAMP(0), server_default=func.now())
 
+    owner = Column(VARCHAR(60), nullable=False)
+
     latitude = Column(FLOAT) # TODO make sure that it doesn't round up!
     longitude = Column(FLOAT)
     altitude = Column(FLOAT)
